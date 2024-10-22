@@ -23,12 +23,13 @@
             font-family: "Roboto", sans-serif;
             background-color: rgb(255, 255, 255);
             background-image: linear-gradient(rgba(192, 102, 50, 0.329), rgba(231, 215, 74, 0.562));
+        
         }
 
         h1 {
             font-size: 40px;
             margin-bottom: 5px;
-            color: rgb(12, 25, 98);
+            color: rbg(12,25,98);
             font-weight: 950;
             color: transparent;
             background: url('https://cdn.pixabay.com/photo/2022/09/21/17/02/blue-background-7470781_1280.jpg') no-repeat center center;
@@ -45,6 +46,9 @@
 
 
         }
+        .bt{
+              color:orange;
+        }
 
         button {
             width: 60px;
@@ -52,8 +56,8 @@
             margin-bottom: 4px;
             font-weight: 700;
             font-size: 20px;
-            background-color: rgb(2, 32, 34);
-            color: white;
+            background-color:rbg(2,32,34);
+            color: rgb(21, 3, 3);
             box-shadow: inset 0px 0px 3px 3px rgb(83, 103, 96);
             border-radius: 6px;
         }
@@ -83,35 +87,35 @@
                 <input type="text" id="result" placeholder="0" readonly>
             </form>
             <div class="button">
-                <button style="background-color: rgb(72, 6, 6);" onclick="cleardigit()">AC</button>
-                <button onclick="backbtn()"><i class="fa-solid fa-delete-left"></i></button>
-                <button onclick="equal()" id="equal">=</button>
+                <button style="background-color: rbg(72,6,6);" onclick="cleardigit()">AC</button>
+                <button class="bt" onclick="backbtn()"><i class="fa-solid fa-delete-left"></i></button>
+                <button style="background-color:black" class="bt" onclick="equal()" id="equal">=</button>
                 <br>
                 <button onclick="display(7)">7</button>
                 <button onclick="display(8)">8</button>
                 <button onclick="display(9)">9</button>
-                <button onclick="display('+')">+</button>
+                <button class="bt" onclick="display('+')">+</button>
                 <br>
                 <button onclick="display(4)">4</button>
                 <button onclick="display(5)">5</button>
                 <button onclick="display(6)">6</button>
-                <button onclick="display('-')">-</button>
+                <button class="bt" onclick="display('-')">-</button>
                 <br>
                 <button onclick="display(1)">1</button>
                 <button onclick="display(2)">2</button>
                 <button onclick="display(3)">3</button>
-                <button onclick="display('/')">/</button>
+                <button class="bt" onclick="display('/')">/</button>
                 <br>
                 <button onclick="display(0)">0</button>
                 <button onclick="display('00')">00</button>
-                <button onclick="display('.')">.</button>
-                <button onclick="display('*')">*</button>
+                <button class="bt" onclick="display('.')">.</button>
+                <button class="bt" onclick="display('*')">*</button>
 
             </div>
         </div>
 
     </section>
 </body>
-<script src="./calc.js"></script>
+<script src="./cal.js"></script>
 
 </html>
